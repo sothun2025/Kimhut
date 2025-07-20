@@ -1,0 +1,251 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café</title>
+    <link rel="stylesheet" href="Style.CSS">
+</head>
+
+<body>
+    <div class="header">
+        <img src="D:\Graphic Design\Photoshop\Image\logo\1-removebg.png" alt="KimhutCafé">
+        <h1>KimhutCafé</h1>
+    </div>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/people/%E1%9E%82%E1%9E%B9%E1%9E%98%E1%9E%A0%E1%9F%8A%E1%9E%BB%E1%9E%8F-%E1%9E%80%E1%9E%B6%E1%9E%A0%E1%9F%92%E1%9E%9C%E1%9F%81Kimhut-Coffee/100068016318775/"
+            target="_blank" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://t.me" target="_blank" aria-label="Telegram">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram" />
+        </a>
+        <a href="https://maps.app.goo.gl/BHhLBougnc5rbpeT9" target="_blank" aria-label="Google Map">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlemaps.svg" alt="Google Map" />
+        </a>
+        <a href="#order" aria-label="Order Cart">
+            <img src="C:\Users\Thoeun Sothun\Downloads\shopping-cart (1).png" alt="Order Cart" />
+        </a>
+    </div>
+    <!-- <section class="map-section">
+  <h2 style="text-align:center; color:#b87331; margin-bottom:12px;">Find Us</h2>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.4084536799137!2d104.9132611!3d11.5621084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951a118e90901%3A0x9c5ab6e19c72ae1a!2zQ2FtYm9kaWE!5e0!3m2!1sen!2skh!4v1688973372261!5m2!1sen!2skh"
+      width="100%" height="330" style="border:0; border-radius:14px; box-shadow:0 4px 14px #dbb58341;"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section> -->
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#" class="active" onclick="showPage('home', this)">Home</a></li>
+            <li><a href="#" onclick="showPage('menu', this)">Menu</a></li>
+            <li><a href="#" onclick="showPage('about', this)">About Us</a></li>
+            <li><a href="#" onclick="showPage('contact', this)">Contact Us</a></li>
+            <li><a href="#" onclick="showPage('order', this)">Order History</a></li>
+        </ul>
+    </nav>
+    <div class="divider"></div>
+    <!-- Home -->
+    <section id="home-section">
+        <div class="main-images">
+            <img src="D:\Graphic Design\Photoshop\Image\Drink\Menu_Caffee.jpg" alt="Pastries and Coffee">
+            <img src="D:\Graphic Design\Photoshop\Image\Drink\Poster.jpg" alt="Cakes Display">
+        </div>
+        <div class="desc-section">
+            ស្វាគមន៍មកកាន់ KimhutCafe ទីកន្លែងដែលស្រលាញ់កាហ្វេជួបជុំគ្នា!
+            នៅទីនេះ យើងមានជម្រើសកាហ្វេថ្មីៗ និងរសជាតិឈ្ងុយឆ្ងាញ់ជាច្រើនប្រភេទ សម្រាប់បំពេញតម្រូវការរបស់អ្នកនឹងពេលវេលា
+            សម្រាករបស់អ្នក។
+        </div>
+    </section>
+    <!-- Menu -->
+    <section id="menu-section" class="hidden menu-section">
+        <h2>View Menu</h2>
+        <form id="orderForm">
+            <div class="menu-list">
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\passion.jpg" x alt="Passion">
+                    <h3>Passion</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-passion" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\passion-mill.jpg" alt="Passion-Milk">
+                    <h3>Passion-Milk</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-passionmilk" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\Storbery.jpg" alt="Strawberry">
+                    <h3>Strawberry</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-strawberry" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\Storbery1.jpg" alt="Blueberry">
+                    <h3>Blueberry</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-blueberry" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\Green-tea.jpg" alt="Green-Tea">
+                    <h3>Green-Tea</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-greentea" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\Avocado.jpg" alt="Avocado">
+                    <h3>Avocado</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-avocado" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="D:\Graphic Design\Photoshop\Image\Drink\Drinks\Chocolate.jpg" alt="Chocolate">
+                    <h3>Chocolate</h3>
+                    <div class="price">4000៛</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-chocolate" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80"
+                        alt="Coffee">
+                    <h3>Fresh Brewed Coffee</h3>
+                    <div class="price">$1.80</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-coffee" min="0" value="0"></div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=400&q=80"
+                        alt="Cinnamon Roll">
+                    <h3>Cinnamon Roll</h3>
+                    <div class="price">$2.80</div>
+                    <div class="order-qty">Quantity: <input type="number" id="qty-cinnamon" min="0" value="0"></div>
+                </div>
+            </div>
+            <div class="order-bar">Order Total: $<span id="order-total">0.00</span></div>
+            <div class="order-buttons">
+                <button type="button" class="order-btn" id="submitOrder">Submit Order</button>
+                <button type="button" class="reset-btn" id="resetOrder">Reset Order</button>
+            </div>
+        </form>
+    </section>
+    <!-- About Us -->
+    <section id="about-section" class="hidden about-section">
+        <img src="D:\Graphic Design\Photoshop\Image\logo\1-removebg.png" alt="Cafe Logo">
+        <div style="margin-top:18px; font-size:21px;">ខេត្តកំពង់ឆ្នាំង​ <br>​ ស្រុកបរិបូណ៏​ <br>ភូមិកណ្តាល</div>
+        <div style="margin:14px 0 12px 0; font-size:20px;">Tel +855: 973-555-0193</div>
+        <h2 style="margin-bottom:8px;margin-top:28px;">Hours</h2>
+        <div style="font-size:20px;">
+            Open: Everyday <br>
+            Start-Time: 6:00am – 6:00pm<br>
+            Closed on Sundays
+        </div>
+        <div style="margin-top:35px; font-size:18px; font-weight:bold;">© 2025, kimhut Cafe. All rights reserved.</div>
+    </section>
+    <!-- Contact Us (Form) -->
+    <section id="contact-section" class="hidden contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+            <div class="success-msg" id="successMsg"></div>
+        </form>
+    </section>
+    <!-- Order History -->
+    <section id="order-section" class="hidden order-section">
+        <h2>Order History</h2>
+        <ul class="order-history-list">
+            <li>10/07/2025 - 2x Croissant, 1x Coffee - <strong>$6.80</strong></li>
+            <li>05/07/2025 - 1x Chocolate Cake, 2x Fruit Tart - <strong>$11.50</strong></li>
+            <li>01/07/2025 - 1x Cinnamon Roll, 1x Coffee - <strong>$4.60</strong></li>
+            <li>27/06/2025 - 3x Croissant, 1x Coffee - <strong>$9.30</strong></li>
+        </ul>
+    </section>
+
+    <script>
+        function showPage(page, elem) {
+            document.getElementById('home-section').classList.add('hidden');
+            document.getElementById('about-section').classList.add('hidden');
+            document.getElementById('contact-section').classList.add('hidden');
+            document.getElementById('menu-section').classList.add('hidden');
+            document.getElementById('order-section').classList.add('hidden');
+            document.querySelectorAll('.nav ul li a').forEach(a => a.classList.remove('active'));
+            if (page === 'home') document.getElementById('home-section').classList.remove('hidden');
+            if (page === 'about') document.getElementById('about-section').classList.remove('hidden');
+            if (page === 'contact') document.getElementById('contact-section').classList.remove('hidden');
+            if (page === 'menu') document.getElementById('menu-section').classList.remove('hidden');
+            if (page === 'order') document.getElementById('order-section').classList.remove('hidden');
+            if (elem) elem.classList.add('active');
+        }
+        showPage('home', document.querySelector('.nav ul li a'));
+        document.getElementById('contactForm').onsubmit = function (e) {
+            e.preventDefault();
+            document.getElementById('successMsg').innerText = 'Thank you for contacting us! We have received your message.';
+            this.reset();
+            setTimeout(() => { document.getElementById('successMsg').innerText = ''; }, 4000);
+        }
+        // ----- Cafe Menu Order Calculation -----
+        const itemList = [
+            { id: 'passion', price: 4000, isDollar: false },
+            { id: 'passionmilk', price: 4000, isDollar: false },
+            { id: 'strawberry', price: 4000, isDollar: false },
+            { id: 'blueberry', price: 4000, isDollar: false },
+            { id: 'greentea', price: 4000, isDollar: false },
+            { id: 'avocado', price: 4000, isDollar: false },
+            { id: 'chocolate', price: 4000, isDollar: false },
+            { id: 'coffee', price: 1.80, isDollar: true },
+            { id: 'cinnamon', price: 2.80, isDollar: true },
+        ];
+        function calcTotal() {
+            let total = 0;
+            itemList.forEach(item => {
+                const qty = parseInt(document.getElementById('qty-' + item.id).value, 10) || 0;
+                if (item.isDollar) {
+                    total += qty * item.price;
+                } else {
+                    // Convert riel to USD (assume 1 USD = 4000៛)
+                    total += qty * item.price / 4000;
+                }
+            });
+            document.getElementById('order-total').innerText = total.toFixed(2);
+        }
+        itemList.forEach(item => {
+            document.getElementById('qty-' + item.id).addEventListener('input', calcTotal);
+        });
+        document.getElementById('resetOrder').onclick = function () {
+            itemList.forEach(item => {
+                document.getElementById('qty-' + item.id).value = 0;
+            });
+            calcTotal();
+        };
+        document.getElementById('submitOrder').onclick = function () {
+            let summary = '';
+            let hasOrder = false;
+            let total = 0;
+            itemList.forEach(item => {
+                const qty = parseInt(document.getElementById('qty-' + item.id).value, 10) || 0;
+                if (qty > 0) {
+                    hasOrder = true;
+                    let price = item.isDollar ? item.price : (item.price / 4000);
+                    summary += `${qty} x ${item.id.charAt(0).toUpperCase() + item.id.slice(1)} @ $${price.toFixed(2)}\n`;
+                    total += qty * price;
+                }
+            });
+            if (!hasOrder) {
+                alert('Please select at least one item.');
+                return;
+            }
+            alert('Order Submitted!\n' + summary + `Total: $${total.toFixed(2)}`);
+        };
+        // Init calculation
+        calcTotal();
+    </script>
+</body>
+
+</html>
