@@ -11,24 +11,24 @@
     <header>
         <img src="image/B1.jpeg" alt="KimhutCafé Logo" class="logo">
         <h1>KimhutCafé</h1>
-        <nav>
-            <ul>
-                <!-- <li><a href="index.html"> Home</a></li>
-                <li class="dropdown">
-                    <a href="Menu.html" class="dropbtn" class="active">Menu &#9662;</a>
-                    <div class="dropdown-content">
-                        <a href="#caffe">Caffe</a>
-                        <a href="#drink">Drink</a>
-                    </div>
-                </li> -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Menu.html" class="active">Menu</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="order-history.html">Order History</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <!-- <li><a href="index.html"> Home</a></li>
+            <li class="dropdown">
+                <a href="Menu.html" class="dropbtn" class="active">Menu &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="#caffe">Caffe</a>
+                    <a href="#drink">Drink</a>
+                </div>
+            </li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Menu.html" class="active">Menu</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="order-history.html">Order History</a></li>
+        </ul>
+    </nav>
     <section class="contact-social-section">
         <div class="social-icons">
             <a href="https://web.facebook.com/people/%E1%9E%82%E1%9E%B9%E1%9E%98%E1%9E%A0%E1%9F%8A%E1%9E%BB%E1%9E%8F-%E1%9E%80%E1%9E%B6%E1%9E%A0%E1%9F%92%E1%9E%9C%E1%9F%81Kimhut-Coffee/100068016318775/"
@@ -186,7 +186,8 @@
                         <div class="quantity">
                             Quantity: <input type="number" value="0" min="0" id="qty-passion-mill">
                         </div>
-                        <button onclick="addToCart('ផាសិនស្រស់​​ ទឹកដោះគោខាប់', 'qty-passion-mill', 3500, 0.88)">Add to Cart</button>
+                        <button onclick="addToCart('ផាសិនស្រស់​​ ទឹកដោះគោខាប់', 'qty-passion-mill', 3500, 0.88)">Add to
+                            Cart</button>
                     </div>
                     <div class="menu-card">
                         <img src="image/passion.jpg" alt="passion">
@@ -196,7 +197,8 @@
                         <div class="quantity">
                             Quantity: <input type="number" value="0" min="0" id="qty-passion">
                         </div>
-                        <button onclick="addToCart('ផាសិនស្រស់ ទឹកដោះគោឆៅ', 'qty-passion', 4000, 1)">Add to Cart</button>
+                        <button onclick="addToCart('ផាសិនស្រស់ ទឹកដោះគោឆៅ', 'qty-passion', 4000, 1)">Add to
+                            Cart</button>
                     </div>
                     <div class="menu-card">
                         <img src="image/passion1.jpg" alt="passion-soda">
@@ -206,7 +208,8 @@
                         <div class="quantity">
                             Quantity: <input type="number" value="0" min="0" id="qty-passion-soda">
                         </div>
-                        <button onclick="addToCart('ផាសិនស្រស់​ សូដា', 'qty-passion-soda', 4000, 1)">Add to Cart</button>
+                        <button onclick="addToCart('ផាសិនស្រស់​ សូដា', 'qty-passion-soda', 4000, 1)">Add to
+                            Cart</button>
                     </div>
                     <div class="menu-card">
                         <img src="image/Storbery.jpg" alt="Storbery">
@@ -262,10 +265,11 @@
             <div id="thankyou-message" class="thankyou-message" style="display: none;"></div>
         </div>
     </div>
-    <button id="cart-icon"
-        style="position:fixed;right:22px;bottom:90px;z-index:100;background:#c3ff00;color:#fff;border:none;border-radius:50%;width:60px;height:60px;font-size:32px;cursor:pointer;">🛒</button>
+    <button id="cart-icon" style="position:fixed;right:22px;bottom:90px;z-index:100;background:#c3ff00;color:#fff;
+        border:none;border-radius:50%;width:60px;height:60px;font-size:32px;cursor:pointer;">🛒</button>
     <span id="cart-count"
-        style="position:fixed;right:18px;bottom:85px;background:red;color:#fff;border-radius:50%;width:26px;height:26px;display:inline-block;text-align:center;line-height:26px;font-weight:bold;z-index:101;">0</span>
+        style="position:fixed;right:18px;bottom:85px;background:red;color:#fff;border-radius:50%;
+        width:26px;height:26px;display:inline-block;text-align:center;line-height:26px;font-weight:bold;z-index:101;">0</span>
 
 
     <!-- <script>
@@ -507,7 +511,7 @@
         document.getElementById("checkout-btn").style.display = "none";
         document.getElementById("thankyou-message").style.display = "none";
     };
-   
+
     function submitCheckout(event) {
         event.preventDefault();
         // Get form values
